@@ -16,7 +16,7 @@
             <!-- End topBar-left -->
             <div class="topbar-right">
                 <div class="sign-in">
-                    <a href="#" title="register">Registration</a>
+                    <a href="/registration" title="register">Registration</a>
                     <span>/</span>
                     <a href="#" title="sign in" class="active">Log in</a>
                 </div>

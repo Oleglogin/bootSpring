@@ -1,4 +1,4 @@
-package login.group.config;
+package login.group;
 
 /**
  * Created by User on 12.04.2020.

@@ -3,7 +3,7 @@
 <div class="main-content space-60">
     <div class="container">
         <ul class="breadcrumb">
-            <li><a href="#">Home</a></li>
+            <li><a href="welcome">Home</a></li>
             <li class="active">Check out</li>
         </ul>
         <div class="checkout-header">
@@ -28,7 +28,7 @@
                             <form:input path="email" type="email" class="form-control" id="inputemail" placeholder="enter email"/>
                         </div>
                         <div class="form-group">
-                            <label class=" control-label" for="inputemail">Email</label>
+                            <label class=" control-label" for="inputemail">Login</label>
                             <form:input path="username" type="text" class="form-control" id="inputemail" placeholder="enter login"/>
                         </div>
                         <div class="form-group">
@@ -36,7 +36,7 @@
                             <form:input path="password" type="password" class="form-control" id="inputpass" placeholder="******"/>
                         </div>
                         <div class="form-group">
-                            <button class="btn link-button link-button-v2" href="#" title="REgister now">Register now</button>
+                            <button class="btn link-button link-button-v2" href="#" title="REgister now">Rgister now</button>
                         </div>
 
                     </form:form>
