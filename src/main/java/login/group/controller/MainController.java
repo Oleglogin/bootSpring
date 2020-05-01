@@ -20,29 +20,5 @@ public class MainController {
         return "welcome";
     }
 
-//    private static List<Person> persons = new ArrayList<Person>();
-//
-//    static {
-//        persons.add(new Person("Bill", "Gates"));
-//        persons.add(new Person("Steve", "Jobs"));
-//    }
-//
-//    @RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
-//    public String index(Model entity) {
-//
-//        String message = "Hello Spring Boot + JSP";
-//
-//        entity.addAttribute("message", message);
-//
-//        return "index";
-//    }
-//
-//    @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
-//    public String viewPersonList(Model entity) {
-//
-//        entity.addAttribute("persons", persons);
-//
-//        return "personList";
-//    }
 
 }

@@ -18,7 +18,12 @@
                 <div class="sign-in">
                     <a href="/registration" title="register">Registration</a>
                     <span>/</span>
-                    <a href="#" title="sign in" class="active">Log in</a>
+                    <a href="/login" title="sign in" class="active">Log in</a>
+                    <span>/</span>
+                    <a href="/logout"> Exit</a>
+                    <%--<form th:action="@{/logout}" method="post">--%>
+                        <%--<input type="submit" value="Sign Out"/>--%>
+                    <%--</form>--%>
                 </div>
                 <!-- End SignIn -->
             </div>
@@ -112,10 +117,10 @@
                                             </ul>
                                         </li>
                                         <li class="level2">
-                                            <img src="resources/images/Futurelife-sub-menu1.jpg" alt="Sub-Menu" />
+                                            <img src="../../resources/images/Futurelife-sub-menu1.jpg" alt="Sub-Menu" />
                                         </li>
                                         <li class="level2">
-                                            <img src="resources/images/Futurelife-sub-menu1.jpg" alt="Sub-Menu" />
+                                            <img src="../../resources/images/Futurelife-sub-menu1.jpg" alt="Sub-Menu" />
                                         </li>
                                     </ul>
                                     <div class="bottom-sub-menu">
@@ -535,8 +540,8 @@
                         <div class="item-inner">
                             <div class="product">
                                 <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
+                                    <img class="primary_image" src="../../resources/images/products/1.jpg" alt=""/>
+                                    <img class="secondary_image" src="../../resources/images/products/1.jpg" alt=""/>
                                 </a>
                                 <p class="product-title">Bouble Fabric Blazer</p>
                                 <p class="product-price">$ 69.90</p>

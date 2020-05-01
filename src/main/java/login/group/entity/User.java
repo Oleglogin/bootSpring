@@ -19,6 +19,9 @@ public class User {
     private String confirmPassword;
 
     private Date dateOfRegistration = new Date();
+
+    @Enumerated(EnumType.STRING)
+    private Authority authority = Authority.ROLE_USER;
 //    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
 //    private List<Product> products;
 //
@@ -86,6 +89,14 @@ public class User {
         this.dateOfRegistration = dateOfRegistration;
     }
 
+    public Authority getAuthority() {
+        return authority;
+    }
+
+    public void setAuthority(Authority authority) {
+        this.authority = authority;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -95,6 +106,7 @@ public class User {
                 ", password='" + password + '\'' +
                 ", confirmPassword='" + confirmPassword + '\'' +
                 ", dateOfRegistration=" + dateOfRegistration +
+                ", authority=" + authority +
                 '}';
     }
 }

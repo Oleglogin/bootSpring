@@ -28,6 +28,6 @@ public class UserController {
     @RequestMapping(value = "/saveUser", method = RequestMethod.POST)
     public String saveUser(@ModelAttribute("emptyUser")User user){
         userService.save(user);
-        return "redirect:/welcome";
+        return "redirect:/login";
     }
 }
