@@ -12,20 +12,6 @@ import java.io.File;
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
 
-    public void addViewControllers(ViewControllerRegistry registry) {
-
-        registry.addViewController("/").setViewName("/welcome");
-        registry.addViewController("/welcome").setViewName("welcome");
-        registry.addViewController("/login").setViewName("login");
-
-    }
-
-    @Bean
-    public MultipartResolver multipartResolver(){
-        return new StandardServletMultipartResolver();
-    }
-
-
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry
@@ -33,7 +19,6 @@ public class MvcConfig implements WebMvcConfigurer {
                 .addResourceLocations("/resources/");
         registry
                 .addResourceHandler("/workImg/**")
-//                .addResourceLocations("/workImg/");
                 .addResourceLocations("file:" + System.getProperty("user.home") + File.separator + "Pictures\\");
     }
 
