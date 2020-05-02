@@ -1,6 +1,12 @@
 package login.group.entity;
 
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
@@ -8,7 +14,7 @@ import java.util.List;
  * Created by User on 12.04.2020.
  */
 @Entity
-public class User {
+public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -18,20 +24,10 @@ public class User {
     @Transient
     private String confirmPassword;
 
-    private Date dateOfRegistration = new Date();
 
-    @Enumerated(EnumType.STRING)
-    private Authority authority = Authority.ROLE_USER;
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
-//    private List<Product> products;
-//
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
-//    private List<Purchase> purchases;
-//
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
-//    private List<Likes> likes;
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
-//    private List<Account> accounts;
+    private Date dateOfRegistration = new Date();
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
+    private List<Product>products;
 
     public User() {
     }
@@ -40,29 +36,46 @@ public class User {
         this.username = username;
         this.password = password;
     }
+    @Enumerated(EnumType.STRING)
+    private Authority authority =Authority.ROLE_USER;
 
-    public int getId() {
-        return id;
-    }
+    private boolean accountNonExpired = true;
+    private boolean accountNonLocked = true;
+    private boolean credentialsNonExpired = true;
+    private boolean enabled = true;
 
-    public String getUsername() {
-        return username;
-    }
-
-    public String getEmail() {
-        return email;
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        ArrayList<SimpleGrantedAuthority> authorities = new ArrayList<SimpleGrantedAuthority>();
+        authorities.add(new SimpleGrantedAuthority(authority.name().toString()));
+        return authorities;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public String getConfirmPassword() {
-        return confirmPassword;
+    public String getUsername() {
+        return username;
     }
 
-    public Date getDateOfRegistration() {
-        return dateOfRegistration;
+    public boolean isAccountNonExpired() {
+        return accountNonExpired;
+    }
+
+    public boolean isAccountNonLocked() {
+        return accountNonLocked;
+    }
+
+    public boolean isCredentialsNonExpired() {
+        return credentialsNonExpired;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setId(int id) {
@@ -73,20 +86,16 @@ public class User {
         this.username = username;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public void setPassword(String password) {
         this.password = password;
     }
 
-    public void setConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
+    public String getConfirmPassword() {
+        return confirmPassword;
     }
 
-    public void setDateOfRegistration(Date dateOfRegistration) {
-        this.dateOfRegistration = dateOfRegistration;
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
     }
 
     public Authority getAuthority() {
@@ -97,16 +106,62 @@ public class User {
         this.authority = authority;
     }
 
+    public boolean isAccounteNonExpired() {
+        return accountNonExpired;
+    }
+
+    public void setAccounteNonExpired(boolean accounteNonExpired) {
+        this.accountNonExpired = accounteNonExpired;
+    }
+
+    public void setAccountNonLocked(boolean accountNonLocked) {
+        this.accountNonLocked = accountNonLocked;
+    }
+
+    public void setCredentialsNonExpired(boolean credentialsNonExpired) {
+        this.credentialsNonExpired = credentialsNonExpired;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+    public Date getDateOfRegistration() {
+        return dateOfRegistration;
+    }
+
+    public void setDateOfRegistration(Date dateOfRegistration) {
+        this.dateOfRegistration = dateOfRegistration;
+    }
+
+
+
+    public void setAccountNonExpired(boolean accountNonExpired) {
+        this.accountNonExpired = accountNonExpired;
+    }
+
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
-                ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", confirmPassword='" + confirmPassword + '\'' +
-                ", dateOfRegistration=" + dateOfRegistration +
                 ", authority=" + authority +
+                ", accountNonExpired=" + accountNonExpired +
+                ", accountNonLocked=" + accountNonLocked +
+                ", credentialsNonExpired=" + credentialsNonExpired +
+                ", enabled=" + enabled +
                 '}';
     }
 }

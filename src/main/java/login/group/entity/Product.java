@@ -29,17 +29,9 @@ public class Product {
     private Date dateOfSave = new Date();
     private int toLike;
 
-//    @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
-//    private User user;
-//
-//    @OneToMany (cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
-//    private List<Purchase> purchases;
-//
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
-//    private List<Preview> previews;
-//
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
-//    private List<Likes> likes;
+    @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
+    private User user;
+
 
     public Product() {
     }
@@ -51,7 +43,7 @@ public class Product {
         this.price = price;
         this.available = available;
         this.description = description;
-//        this.user = user;
+        this.user = user;
     }
 
     public int getId() {
@@ -94,13 +86,13 @@ public class Product {
         this.description = description;
     }
 
-//    public User getUser() {
-//        return user;
-//    }
-//
-//    public void setUser(User user) {
-//        this.user = user;
-//    }
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public String getSubCategory() {
         return subCategory;
@@ -156,27 +148,5 @@ public class Product {
         this.toLike = toLike;
     }
 
-//    public List<Purchase> getPurchases() {
-//        return purchases;
-//    }
-//
-//    public void setPurchases(List<Purchase> purchases) {
-//        this.purchases = purchases;
-//    }
-//
-//    public List<Preview> getPreviews() {
-//        return previews;
-//    }
-//
-//    public void setPreviews(List<Preview> previews) {
-//        this.previews = previews;
-//    }
-//
-//    public List<Likes> getLikes() {
-//        return likes;
-//    }
-//
-//    public void setLikes(List<Likes> likes) {
-//        this.likes = likes;
-//    }
+
 }

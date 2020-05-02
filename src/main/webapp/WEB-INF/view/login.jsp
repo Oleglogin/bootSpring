@@ -23,6 +23,7 @@
                     <form class="form-horizontal" method="POST" action="${contextPath}/login">
                         <input name="username" type="text" placeholder="Enter login"/>
                         <input name="password" type="password"  placeholder="Password"/>
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" >
                         <button class="site-btn">ENTER</button>
                         <%--<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" >--%>
                         <%--<div class="form-group">--%>
