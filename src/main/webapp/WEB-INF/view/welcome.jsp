@@ -1,981 +1,1394 @@
 <%@include file="tmp/header.jsp"%>
+<!--Start class site-->
+<div class="tz-site">
 
-<header id="header" class="header-v2 color-home2">
-    <div id="topbar">
+    <!--Start id tz header-->
+    <header id="tz-header" class="bk-white">
         <div class="container">
-            <div class="topbar-left">
-                <div class="dropdown">
-                    <a class="btn active">FR</a>
-                    <a class="btn">EN</a>
-                </div>
-                <div class="dropdown">
-                    <a class="btn active">EUR</a>
-                    <a class="btn">USD</a>
-                </div>
-            </div>
-            <!-- End topBar-left -->
-            <div class="topbar-right">
-                <div class="sign-in">
-                    <a href="/registration" title="register">Registration</a>
-                    <span>/</span>
-                    <a href="/login" title="sign in" class="active">Log in</a>
-                    <span>/</span>
-                    <a href="/logout"> Exit</a>
-                    <%--<form th:action="@{/logout}" method="post">--%>
-                        <%--<input type="submit" value="Sign Out"/>--%>
-                    <%--</form>--%>
-                </div>
-                <!-- End SignIn -->
-            </div>
-            <!-- End topbar-right -->
-            <div class="social">
-                <a href="#" title="twitter" class="active"><i class="fa fa-twitter"></i></a>
-                <a href="#" title="sky"><i class="fa fa-skype"></i></a>
-                <a href="#" title="vibo"><i class="fa fa-vine"></i></a>
-                <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
-            </div>
-            <!-- End Social -->
-        </div>
-        <!-- End container -->
-    </div>
-    <!-- End Top Bar -->
-    <div class="header-top">
-        <div class="container">
-            <div class="inner-container">
-                <div class="col-md-10 col-sm-9 col-xs-12">
-                    <p class="icon-menu-mobile"><i class="fa fa-bars" ></i></p>
-                    <div class="logo"><a href="#" title="Hermes">Hermes</a></div>
-                    <nav class="mega-menu color-home2">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <ul class="nav navbar-nav" id="navbar">
-                            <li class="level1 active dropdown"><a href="#" title="Home">Home</a>
-                                <ul class="menu-level-1 dropdown-menu">
-                                    <li class="level2"><a href="home_v1.html" title="Home 1" target="_blank">Home 1</a></li>
-                                    <li class="level2"><a href="home_v2.html" title="Home 2" target="_blank">Home 2</a></li>
-                                    <li class="level2"><a href="home_v3.html" title="Home 3" target="_blank">Home 3</a></li>
-                                    <li class="level2"><a href="home_v4.html" title="Home 4" target="_blank">Home 4</a></li>
-                                    <li class="level2"><a href="home_v5.html" title="Home 5" target="_blank">Home 5</a></li>
-                                    <li class="level2"><a href="home_v6.html" title="Home 6" target="_blank">Home 6</a></li>
-                                    <li class="level2"><a href="home_v7.html" title="Home 7" target="_blank">Home 7</a></li>
-                                </ul>
+
+            <!--Start class header top-->
+            <div class="header-top">
+                <ul class="pull-left">
+                    <li>
+                        <a href="#">
+                            USD
+                            <span class="fa fa-angle-down tz-down"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">EURO</a>
                             </li>
-                            <li class="level1 dropdown">
-                                <a href="#" title="men">Men</a>
-                                <div class="sub-menu dropdown-menu">
-                                    <div class="top-sub-menu">
-                                        <div class="item">
-                                            <p class="image"><i class="fa fa-eyedropper"></i></p>
-                                            <div class="text">
-                                                <h3>Unlimited colors</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </div>
-                                        </div>
-                                        <!-- End item -->
-                                        <div class="item">
-                                            <p class="image"><i class="fa fa-cog"></i></p>
-                                            <div class="text">
-                                                <h3>Powerful UI widgets</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </div>
-                                        </div>
-                                        <!-- End item -->
-                                        <div class="item">
-                                            <p class="image"><i class="fa fa-compress"></i></p>
-                                            <div class="text">
-                                                <h3>Fully responsive layout</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </div>
-                                        </div>
-                                        <!-- End item -->
-                                    </div>
-                                    <ul class="menu-level-1">
-                                        <li class="level2"><a href="#">Clothing</a>
-                                            <ul class="menu-level-2">
-                                                <li class="level3"><a href="#" title="Tops">Tops</a></li>
-                                                <li class="level3"><a href="#" title="T-shirts">T-shirts</a></li>
-                                                <li class="level3"><a href="#" title="shorts">shorts</a></li>
-                                                <li class="level3"><a href="#" title="Coats & Jackets">Coats & Jackets</a></li>
-                                                <li class="level3"><a href="#" title="Jeans">Jeans</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level2"><a href="#">Accessories</a>
-                                            <ul class="menu-level-2">
-                                                <li class="level3"><a href="#" title="Tops">Tops</a></li>
-                                                <li class="level3"><a href="#" title="T-shirts">T-shirts</a></li>
-                                                <li class="level3"><a href="#" title="shorts">shorts</a></li>
-                                                <li class="level3"><a href="#" title="Coats & Jackets">Coats & Jackets</a></li>
-                                                <li class="level3"><a href="#" title="Jeans">Jeans</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level2"><a href="#">Brand</a>
-                                            <ul class="menu-level-2">
-                                                <li class="level3"><a href="#" title="Tops">Tops</a></li>
-                                                <li class="level3"><a href="#" title="T-shirts">T-shirts</a></li>
-                                                <li class="level3"><a href="#" title="shorts">shorts</a></li>
-                                                <li class="level3"><a href="#" title="Coats & Jackets">Coats & Jackets</a></li>
-                                                <li class="level3"><a href="#" title="Jeans">Jeans</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level2">
-                                            <img src="../../resources/images/Futurelife-sub-menu1.jpg" alt="Sub-Menu" />
-                                        </li>
-                                        <li class="level2">
-                                            <img src="../../resources/images/Futurelife-sub-menu1.jpg" alt="Sub-Menu" />
-                                        </li>
-                                    </ul>
-                                    <div class="bottom-sub-menu">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula nisl tellus, nec adipiscing dolor faucibus eu. Vivamus facilisis non diam a fringilla. Etiam sit amet ullamcorper tellus.</p>
-                                    </div>
-                                </div>
-                                <!-- End Dropdow Menu -->
+                            <li>
+                                <a href="#">USD</a>
                             </li>
-                            <li class="level1"><a href="#" title="Women">Women</a></li>
-                            <li class="level1 dropdown"><a href="about-us.html" title="Shop" target="_blank">Shop</a>
-                                <ul class="menu-level-1 dropdown-menu">
-                                    <li class="level2"><a href="checkout-identifi.html" title="Check Out Indentifi" target="_blank">Check Out Indentifi</a></li>
-                                    <li class="level2"><a href="checkout-billing.html" title="Check Out Billing" target="_blank">Check Out Billing</a></li>
-                                    <li class="level2"><a href="checkout-confirm.html" title="Check Out Confirm" target="_blank">Check Out Confirm</a></li>
-                                    <li class="level2"><a href="shopping-cart.html" title="Shopping Cart" target="_blank">Shopping Cart</a></li>
-                                    <li class="level2"><a href="wish-list.html" title="Wishlist" target="_blank">Wishlist</a></li>
-                                    <li class="level2"><a href="grid-product-sidebar.html" title="Grid Product Sidebar" target="_blank">Grid Product Sidebar</a></li>
-                                    <li class="level2"><a href="grid-product-full-width.html" title="Grid Product Full width" target="_blank">Grid Product Full width</a></li>
-                                </ul>
-                            </li>
-                            <li class="level1 dropdown"><a href="#" title="Page">Page</a>
-                                <ul class="menu-level-1 dropdown-menu">
-                                    <li class="level2"><a href="my-account.html" title="My Account" target="_blank">My Account</a></li>
-                                    <li class="level2"><a href="about-us.html" title="About us" target="_blank">About us</a></li>
-                                    <li class="level2"><a href="product-detail.html" title="Contact us" target="_blank">Product Detail</a></li>
-                                    <li class="level2"><a href="popup-newsletter.html" title="Contact us" target="_blank">Newsletter</a></li>
-                                    <li class="level2"><a href="quick-view.html" title="Contact us" target="_blank">Quick View</a></li>
-                                    <li class="level2"><a href="404.html" title="Contact us" target="_blank">Page 404</a></li>
-                                </ul>
-                            </li>
-                            <li class="level1 dropdown"><a href="single-post.html" title="Blog" target="_blank">Blog</a>
-                                <ul class="menu-level-1 dropdown-menu">
-                                    <li class="level2"><a href="blog-2columns.html" title="" target="_blank">Blog 2 Columns</a></li>
-                                    <li class="level2"><a href="blog-3columns.html" title="" target="_blank">Blog 3 Columns</a></li>
-                                    <li class="level2"><a href="single-post.html" title="" target="_blank">Single Post</a></li>
-                                </ul>
+                            <li>
+                                <a href="#">EGP</a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="col-md-2 col-sm-3 col-xs-12">
-                    <div class="cart dropdown">
-                        <a class="icon-cart" href="#" title="Cart">
-                            <i class="fa fa-shopping-basket"></i>
-                            <span class="cart-count">02</span>
-                        </a>
-                        <div class="cart-list dropdown-menu">
-                            <ul class="list">
-                                <li>
-                                    <a href="#" title="" class="cart-product-image"><img src="resources/images/products/1.jpg" alt="Product"></a>
-                                    <div class="text">
-                                        <p class="product-name">Smart TV Ultra HD 40 inch</p>
-                                        <p class="product-price">$ 69.90</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#" title="" class="cart-product-image"><img src="resources/images/products/1.jpg" alt="Product"></a>
-                                    <div class="text">
-                                        <p class="product-name">Smart TV Ultra HD 40 inch</p>
-                                        <p class="product-price">$ 69.90</p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <p class="total"><span>Total:</span> $1121.98</p>
-                            <a class="checkout" href="#" title="">Check out</a>
-                        </div>
-                    </div>
-                    <!-- End cart -->
-                    <div class="search dropdown">
-                        <i class="fa fa-search dropdown-toggle" data-toggle="dropdown"></i>
-                        <div class="search-form dropdown-menu">
-                            <form action="#" method="get">
-                                <input type="text" autocomplete="off" placeholder="Enter Keywords To Search..." value="" class="ajax_autosuggest_input ac_input" name="s">
-                                <button type="submit" class="icon-search">
-                                    <i class="fa fa-angle-right"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- End search -->
-                </div>
-            </div>
-            <!-- End inner container -->
-        </div>
-        <!-- End container -->
-    </div>
-    <!-- End header-top -->
-</header><!-- /header -->
-<div class="main-content main-content-home2">
-    <div class="container">
-        <div class="tp-banner-container color-home2 ver2">
-            <div class="tp-banner" >
-                <ul>    <!-- SLIDE  -->
-                    <!-- SLIDE  -->
-
-                    <li data-transition="random" data-slotamount="7" data-masterspeed="1000" >
-                        <!-- MAIN IMAGE -->
-                        <img src="resources/images/Hermes-home2-bg-slideshow1.jpg"  alt="Futurelife-home2-slideshow"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption large_bold_grey color-white skewfromleft customout size-36"
-                             data-x="645"
-                             data-y="180"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1600"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 9">New style 2016
-                        </div>
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption large_normal_grey color-border skewfromright customout size-60"
-                             data-x="645"
-                             data-y="220"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1700"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 7">Black
-                        </div>
-                        <!-- LAYER NR. 6 -->
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption large_normal_grey color-white skewfromright customout size-60"
-                             data-x="845"
-                             data-y="220"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1700"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 7">& white
-                        </div>
-
-                        <div class="tp-caption small_thin_grey skewfromright customout"
-                             data-x="645"
-                             data-y="310"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1900"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 7">Lorem ipsum dolor sit amet consectetur.
-                        </div>
-
-                        <!-- LAYER NR. 7 -->
-                        <div class="tp-caption skewfromright customout link-1 bg-green height-40 font-size13 home2"
-                             data-x="645"
-                             data-y="390"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1800"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 8"><a href="#" title="View Colection" class="">Check it now !</a>
-                        </div>
-                        <!-- LAYER NR. 7 -->
-                        <div class="tp-caption skewfromright customout link-1 border-green height-40 size13 home2"
-                             data-x="810"
-                             data-y="390"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1800"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 8"><a href="#" title="View Colection" class="">Let's shopping</a>
-                        </div>
-
                     </li>
-
-                    <!-- SLIDER -->
-                    <li data-transition="random" data-slotamount="7" data-masterspeed="1000" >
-                        <!-- MAIN IMAGE -->
-                        <img src="resources/images/Hermes-home2-bg-slideshow1.jpg"  alt="Futurelife-home2-slideshow"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption color-white font-re large_bold_orange size-80 skewfromleft customout"
-                             data-x="630"
-                             data-y="180"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1500"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 6">winter
-                        </div>
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption color-white font-re large_bold_orange size-55 skewfromleft customout"
-                             data-x="630"
-                             data-y="255"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1600"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 9">70%
-                        </div>
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption color-white font-txbo large_bold_orange size-55 skewfromright customout"
-                             data-x="745"
-                             data-y="255"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1700"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 7">sale off
-                        </div>
-
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption color-white font-re large_bold_orange size-16 skewfromright customout"
-                             data-x="685"
-                             data-y="320"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1800"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 7">Three for the price of two
-                        </div>
-
-                        <!-- LAYER NR. 6 -->
-                        <div class="tp-caption large_bold_grey size-140 color-home2 bg-box-green skewfromright customout"
-                             data-x="674"
-                             data-y="115"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1900"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 1"><img src="resources/images/Hermes-home2-slideshow-item2.png" alt="">
-                        </div>
-
-                        <!-- LAYER NR. 7 -->
-                        <div class="tp-caption skewfromright customout link-1 no-bg height-50"
-                             data-x="745"
-                             data-y="368"
-                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                             data-speed="800"
-                             data-start="1800"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="on"
-                             style="z-index: 8"><a href="#" title="Check now !" class="">Check now !</a>
-                        </div>
+                    <li>
+                        <a href="#">
+                            English
+                            <span class="fa fa-angle-down tz-down"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Call us:   (012) 3456 7890</a>
                     </li>
                 </ul>
-                <div class="tp-bannertimer"></div>
+                <ul class="pull-right">
+                    <li>
+                        <a href="shop-register.html">My Account</a>
+                    </li>
+                    <li>
+                        <a href="#">Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="shop-cart.html">My Cart</a>
+                    </li>
+                    <li>
+                        <a href="shop-checkout.html">Checkout</a>
+                    </li>
+                    <li class="tz-header-login">
+                        <a href="/login">Login</a>
+                        <%--<div class="tz-login-form">--%>
+                            <%--<form>--%>
+                                <%--<p class="form-content">--%>
+                                    <%--<label for="username">Username / Email</label>--%>
+                                    <%--<input type="text" name="username" id="username" value="">--%>
+                                <%--</p>--%>
+                                <%--<p class="form-content">--%>
+                                    <%--<label for="password">Password</label>--%>
+                                    <%--<input type="password" name="username" id="password" value="">--%>
+                                <%--</p>--%>
+                                <%--<p class="form-footer">--%>
+                                    <%--<a href="#">Lost Password?</a>--%>
+                                    <%--<button type="submit" class="pull-right button_class">LOGIN</button>--%>
+                                <%--</p>--%>
+                                <%--<p class="form-text">--%>
+                                    <%--Don't have an account? <a href="shop-register.html">Register Here</a>--%>
+                                <%--</p>--%>
+                            <%--</form>--%>
+                        <%--</div>--%>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <!-- End Slide-Show -->
-        <div class="banner-home2-top space-50">
-            <div class="col-md-3 first">
-                <div class="effect-v6 hover-effect-images">
-                    <img src="resources/images/Hermes-home2-bannner-top.jpg" alt="Banner">
-                    <div class="action light-style">
-                        <h3>Women</h3>
-                        <p>amet consectetur adipiscing elit.</p>
-                        <a href="#" title="view collection">view collection</a>
-                    </div>
-                </div>
-            </div>
-            <!-- End col-md-3 -->
-            <div class="col-md-3">
-                <div class="effect-v6 hover-effect-images">
-                    <img src="resources/images/Hermes-home2-bannner-top.jpg" alt="Banner">
-                    <div class="action light-style">
-                        <h3>Women</h3>
-                        <p>amet consectetur adipiscing elit.</p>
-                        <a href="#" title="view collection">view collection</a>
-                    </div>
-                </div>
-            </div>
-            <!-- End col-md-3 -->
-            <div class="col-md-6">
-                <div class="effect-v6 hover-effect-images">
-                    <img src="resources/images/Hermes-home2-bannner-top2.jpg" alt="Banner">
-                    <div class="action light-style">
-                        <h3>Women</h3>
-                        <p>amet consectetur adipiscing elit.</p>
-                        <a href="#" title="view collection">view collection</a>
-                    </div>
-                </div>
-            </div>
-            <!-- End col-md-6 -->
-        </div>
-        <!-- End Banner -->
-        <div class="title-text">
-            <h3>Feature Products</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-        </div>
-        <!-- End title-text -->
-        <div class="feature-product color-home2">
-            <div class="product-tab-content products">
-                <div class="item-inner">
-                    <div class="product">
-                        <a class="product-images" href="#" title="">
-                            <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                            <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                        </a>
-                        <p class="product-title">Bouble Fabric Blazer</p>
-                        <p class="product-price">$ 69.90</p>
-                        <a class="add-to-cart" href="#">Add to Cart</a>
-                        <div class="action">
-                            <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                            <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-inner">
-                    <div class="product">
-                        <a class="product-images" href="#" title="">
-                            <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                            <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                        </a>
-                        <p class="product-title">Bouble Fabric Blazer</p>
-                        <p class="product-price">$ 69.90</p>
-                        <a class="add-to-cart" href="#">Add to Cart</a>
-                        <div class="action">
-                            <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                            <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-inner">
-                    <div class="product sale">
-                        <span class="sale lable">Sale</span>
-                        <a class="product-images" href="#" title="">
-                            <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                            <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                        </a>
-                        <p class="product-title">Bouble Fabric Blazer</p>
-                        <div class="product-price">
-                            <span class="price">$ 69.90</span>
-                            <span class="price-old">$ 670.99</span>
-                            <p class="content-star">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star"></i>
-                            </p>
-                        </div>
-                        <a class="add-to-cart" href="#">Add to Cart</a>
-                        <div class="action">
-                            <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                            <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-inner">
-                    <div class="product ">
-                        <span class="new lable">New</span>
-                        <a class="product-images" href="#" title="">
-                            <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                            <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                        </a>
-                        <p class="product-title">Bouble Fabric Blazer</p>
-                        <p class="product-price">$ 69.90</p>
-                        <a class="add-to-cart" href="#">Add to Cart</a>
-                        <div class="action">
-                            <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                            <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End product-tab-content products-->
-        </div>
-        <!--End Feature Product -->
-        <div class="banner-home2-bottom space-80 space-padding-tb-30 hover-effect-images">
-            <i class="fa fa-shopping-basket"></i>
-            <div class="text">
-                <h3>Hermes - PERFECT THEME FOR ANY KIND OF STORE.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisi sapien, accumsan ut molestie a, laoreet eget lorem.</p>
-            </div>
-        </div>
-        <!-- End Banner Center -->
-        <!-- End title text -->
-        <div class="slider-product featured-product color-home2 space-50">
-            <ul class="tabs title">
-                <li class="item" rel="new-products">New products</li>
-                <span>/</span>
-                <li class="item" rel="bestseller">bestseller</li>
-                <span>/</span>
-                <li class="item" rel="on-sale">on sale</li>
+            <!--End class header top-->
 
+            <!--Start header content-->
+            <div class="header-content">
+                <h3 class="tz-logo pull-left"><a href="/welcome"><img src="../../resources/images/logo.png" alt="home" /></a></h3>
+                <div class="tz-search pull-right">
+
+                    <!--Start form search-->
+                    <form>
+                        <label class="select-arrow">
+                            <select name="category">
+                                <option value="">All Category</option>
+                                <option value="#">Baby Seats</option>
+                                <option value="#">Halfwheelers</option>
+                                <option value="#">Locks/Security</option>
+                                <option value="#">WheelSystems</option>
+                                <option value="#">Rim Tape</option>
+                            </select>
+                        </label>
+                        <input type="text" class="tz-query" id="tz-query" value="" placeholder="Search for product">
+                        <button type="submit"></button>
+                    </form>
+                    <!--End Form search-->
+
+                    <!--live search-->
+                    <div class="live-search">
+                        <%--<ul>--%>
+                            <%--<li>--%>
+                                <%--<div class="live-img"><img src="../../resources/images/product/product-search1.jpg" alt="product search one"></div>--%>
+                                <%--<div class="live-search-content">--%>
+                                    <%--<h6><a href="single-product.html">Defy Advanced</a></h6>--%>
+                                    <%--<span class="live-meta">--%>
+                                            <%--<a href="single-product.html">$2650.00</a>--%>
+                                            <%--<span class="product-color">--%>
+                                                <%--<i class="light-blue"></i>--%>
+                                                <%--<i class="orange"></i>--%>
+                                                <%--<i class="orange-dark"></i>--%>
+                                            <%--</span>--%>
+                                        <%--</span>--%>
+                                <%--</div>--%>
+                            <%--</li>--%>
+                            <%--<li>--%>
+                                <%--<div class="live-img"><img src="../../resources/images/product/product-search2.jpg" alt="product search two"></div>--%>
+                                <%--<div class="live-search-content">--%>
+                                    <%--<h6><a href="single-product.html">Defy Advanced</a></h6>--%>
+                                    <%--<span class="live-meta">--%>
+                                            <%--<a href="single-product.html">$2650.00</a>--%>
+                                            <%--<span class="product-color">--%>
+                                                <%--<i class="light-blue"></i>--%>
+                                                <%--<i class="orange"></i>--%>
+                                                <%--<i class="blueviolet"></i>--%>
+                                                <%--<i class="orange-dark"></i>--%>
+                                            <%--</span>--%>
+                                        <%--</span>--%>
+                                <%--</div>--%>
+                            <%--</li>--%>
+                            <%--<li>--%>
+                                <%--<div class="live-img"><img src="images/product/product-search3.jpg" alt="product search one"></div>--%>
+                                <%--<div class="live-search-content">--%>
+                                    <%--<h6><a href="single-product.html">Defy Advanced</a></h6>--%>
+                                    <%--<span class="live-meta">--%>
+                                            <%--<a href="single-product.html">$2650.00</a>--%>
+                                            <%--<span class="product-color">--%>
+                                                <%--<i class="blueviolet"></i>--%>
+                                                <%--<i class="light-blue"></i>--%>
+                                                <%--<i class="orange-dark"></i>--%>
+                                                <%--<i class="orange"></i>--%>
+                                            <%--</span>--%>
+                                        <%--</span>--%>
+                                <%--</div>--%>
+                            <%--</li>--%>
+                        <%--</ul>--%>
+                    </div>
+                    <!--End live search-->
+                </div>
+            </div>
+            <!--End class header content-->
+        </div>
+
+        <!--Start main menu -->
+        <nav class="tz-menu-primary">
+            <div class="container">
+
+                <!--Main Menu-->
+                <ul class="tz-main-menu pull-left nav-collapse">
+                    <li>
+                        <a href="/welcome">Home</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="home-boxed.html">Home Boxed</a>
+                            </li>
+                            <li>
+                                <a href="mega-menu.html">Mega Menu</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="shop.html">
+                            category
+                            <span class="red-light">On sale!</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html">Bikes</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">Gear</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">Shop</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="shop-rightsidebar.html">Shop Right</a>
+                            </li>
+                            <li>
+                                <a href="shop-cart.html">Shop Cart</a>
+                            </li>
+                            <li>
+                                <a href="shop-checkout.html">Shop Checkout</a>
+                            </li>
+                            <li>
+                                <a href="shop-register.html">Shop Register</a>
+                            </li>
+                            <li>
+                                <a href="single-product.html">Shop Single</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                            <span class="cyan-dark">Best off!</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="blog-right.html">Blog Right</a>
+                            </li>
+                            <li>
+                                <a href="single-blog.html">Blog Single</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!--End Main menu-->
+
+                <!--Shop meta-->
+                <ul class="tz-ecommerce-meta pull-right">
+                    <li class="tz-menu-wishlist">
+                        <a href="#"><strong>0</strong></a>
+                    </li>
+                    <li class="tz-mini-cart">
+                        <a href="shop-cart.html"><strong>2</strong>Cart : $199.00</a>
+
+                        <!--Mini cart-->
+                        <ul class="cart-inner">
+                            <li class="mini-cart-content">
+                                <div class="mini-cart-img"><img src="images/product/product-cart1.png" alt="product search one"></div>
+                                <div class="mini-cart-ds">
+                                    <h6><a href="single-product.html">Liv Race Day Short</a></h6>
+                                    <span class="mini-cart-meta">
+                                            <a href="single-product.html">$2650.00</a>
+                                            <span class="mini-meta">
+                                               <span class="mini-color">Color: <i class="orange"></i></span>
+                                               <span class="mini-qty">Qty: 5</span>
+                                            </span>
+                                        </span>
+                                </div>
+                                <span class="mini-cart-delete"><img src="images/delete.png" alt="delete"></span>
+                            </li>
+                            <li class="mini-cart-content">
+                                <div class="mini-cart-img"><img src="images/product/product-cart2.png" alt="product search one"></div>
+                                <div class="mini-cart-ds">
+                                    <h6><a href="single-product.html">City Pedals Sport</a></h6>
+                                    <span class="mini-cart-meta">
+                                            <a href="single-product.html">$2650.00</a>
+                                            <span class="mini-meta">
+                                               <span class="mini-color">Color: <i class="orange"></i></span>
+                                               <span class="mini-qty">Qty: 5</span>
+                                            </span>
+                                        </span>
+                                </div>
+                                <span class="mini-cart-delete"><img src="images/delete.png" alt="delete"></span>
+                            </li>
+                            <li class="mini-cart-content">
+                                <div class="mini-cart-img"><img src="images/product/product-cart3.png" alt="product search one"></div>
+                                <div class="mini-cart-ds">
+                                    <h6><a href="single-product.html">Gloss</a></h6>
+                                    <span class="mini-cart-meta">
+                                            <a href="single-product.html">$2650.00</a>
+                                            <span class="mini-meta">
+                                               <span class="mini-color">Color: <i class="orange"></i></span>
+                                               <span class="mini-qty">Qty: 5</span>
+                                            </span>
+                                        </span>
+                                </div>
+                                <span class="mini-cart-delete"><img src="images/delete.png" alt="delete"></span>
+                            </li>
+                            <li class="mini-subtotal">
+                                    <span class="subtotal-content">
+                                        Subtotal:
+                                        <strong class="pull-right">$1,100.00</strong>
+                                    </span>
+                            </li>
+                            <li class="mini-footer">
+                                <a href="shop-cart.html" class="view-cart">View Cart</a>
+                                <a href="shop-checkout.html" class="check-out">Checkout</a>
+                            </li>
+                        </ul>
+                        <!--End mini cart-->
+
+                    </li>
+                </ul>
+                <!--End Shop meta-->
+
+                <!--navigation mobi-->
+                <button data-target=".nav-collapse" class="btn-navbar tz_icon_menu" type="button">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!--End navigation mobi-->
+            </div>
+        </nav>
+        <!--End stat main menu-->
+
+    </header>
+    <!--End id tz header-->
+
+    <!--SATRT REVOLUTION SLIDER-->
+    <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
+        <div id="rev_slider_1_1" class="rev_slider fullwidthabanner">
+            <ul>
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="700"  data-saveperformance="off" >
+                    <!-- MAIN IMAGE -->
+                    <img src="../../resources/images/slider/slider.jpg"  alt="slider"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption sft stt"
+                         data-x="275"
+                         data-y="180"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><img src="../../resources/images/slider/T.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption sfb stb"
+                         data-x="340"
+                         data-y="160"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><img src="../../resources/images/slider/h.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption sft stt"
+                         data-x="405"
+                         data-y="180"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><img src="../../resources/images/slider/E.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption sfb stb"
+                         data-x="495"
+                         data-y="180"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><img src="../../resources/images/slider/B.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 5 -->
+                    <div class="tp-caption sft stt"
+                         data-x="560"
+                         data-y="160"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><img src="../../resources/images/slider/i.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 6 -->
+                    <div class="tp-caption sfb stb"
+                         data-x="587"
+                         data-y="180"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><img src="../../resources/images/slider/C.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 7 -->
+                    <div class="tp-caption sft stt"
+                         data-x="641"
+                         data-y="160"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><img src="../../resources/images/slider/y.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 8 -->
+                    <div class="tp-caption sfb stb"
+                         data-x="695"
+                         data-y="180"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><img src="../../resources/images/slider/C.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 9 -->
+                    <div class="tp-caption sft stt"
+                         data-x="760"
+                         data-y="160"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><img src="../../resources/images/slider/L.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 10 -->
+                    <div class="tp-caption sfb stb"
+                         data-x="810"
+                         data-y="180"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><img src="../../resources/images/slider/E.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 11 -->
+                    <div class="tp-caption mediumlightwhite2 customin customout tp-resizeme"
+                         data-x="center" data-hoffset="-19"
+                         data-y="center" data-voffset="10"
+                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:-180;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:3000;transformOrigin:50% 0%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="1500"
+                         data-start="1500"
+                         data-easing="easeOutQuint"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut">Lorem Ipsum is simply dummy text of the printing
+                    </div>
+
+                    <!-- LAYER NR. 12 -->
+                    <div class="tp-caption black customin customout tp-resizeme"
+                         data-x="center" data-hoffset="-19"
+                         data-y="center" data-voffset="110"
+                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="1500"
+                         data-start="1600"
+                         data-easing="Back.easeInOut"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeOut"><a href='shop.html' class='buttom_bike'>Shop Now</a>
+                    </div>
+                </li>
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="700"  data-saveperformance="off" >
+                    <!-- MAIN IMAGE -->
+                    <img src="../../resources/images/slider/slider31.jpg"  alt="slider31"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption slider-title sfr tp-resizeme"
+                         data-x="center" data-hoffset="0"
+                         data-y="center" data-voffset="-52"
+                         data-speed="1200"
+                         data-start="500"
+                         data-easing="easeOutExpo"
+                         data-splitin="chars"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300">COLLECTION FOR BIKE
+                    </div>
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption black sfb tp-resizeme"
+                         data-x="center" data-hoffset="0"
+                         data-y="center" data-voffset="34"
+                         data-speed="800"
+                         data-start="2200"
+                         data-easing="Quad.easeInOut"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><a href='shop.html' class='buttom_bike'>Shop Now</a>
+                    </div>
+                </li>
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="700"  data-saveperformance="off" >
+                    <!-- MAIN IMAGE -->
+                    <img src="../../resources/images/slider/slider2.jpg"  alt="slider2"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption sft"
+                         data-x="275"
+                         data-y="200"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><img src="../../resources/images/slider/T.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption sfb"
+                         data-x="340"
+                         data-y="180"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><img src="../../resources/images/slider/h.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption sft"
+                         data-x="405"
+                         data-y="200"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><img src="../../resources/images/slider/E.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption sfb"
+                         data-x="495"
+                         data-y="200"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><img src="../../resources/images/slider/B.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 5 -->
+                    <div class="tp-caption sft"
+                         data-x="560"
+                         data-y="180"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><img src="../../resources/images/slider/i.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 6 -->
+                    <div class="tp-caption sfb"
+                         data-x="587"
+                         data-y="200"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><img src="../../resources/images/slider/C.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 7 -->
+                    <div class="tp-caption sft"
+                         data-x="641"
+                         data-y="180"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><img src="../../resources/images/slider/y.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 8 -->
+                    <div class="tp-caption sfb"
+                         data-x="695"
+                         data-y="200"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><img src="../../resources/images/slider/C.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 9 -->
+                    <div class="tp-caption sft"
+                         data-x="760"
+                         data-y="180"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><img src="../../resources/images/slider/L.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 10 -->
+                    <div class="tp-caption sfb"
+                         data-x="810"
+                         data-y="200"
+                         data-speed="1500"
+                         data-start="600"
+                         data-easing="Back.easeInOut"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"><img src="../../resources/images/slider/E.png" alt="">
+                    </div>
+
+                    <!-- LAYER NR. 11 -->
+                    <div class="tp-caption mediumlightwhite2 customin tp-resizeme"
+                         data-x="center" data-hoffset="-19"
+                         data-y="center" data-voffset="30"
+                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:-180;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:3000;transformOrigin:50% 0%;"
+                         data-speed="1500"
+                         data-start="1500"
+                         data-easing="Power4.easeOut"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300">Lorem Ipsum is simply dummy text of the printing
+                    </div>
+                </li>
             </ul>
-            <p class="center">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-            <div class="tab-container space-0">
-                <div id="new-products" class="tab-content">
-                    <div class="product-tab-content products">
-                        <div class="item-inner">
-                            <div class="product">
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="../../resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="../../resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <p class="product-price">$ 69.90</p>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-inner">
-                            <div class="product">
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <p class="product-price">$ 69.90</p>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-inner">
-                            <div class="product sale">
-                                <span class="sale lable">Sale</span>
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <div class="product-price">
-                                    <span class="price">$ 69.90</span>
-                                    <span class="price-old">$ 670.99</span>
-                                    <p class="content-star">
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star"></i>
-                                    </p>
-                                </div>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-inner">
-                            <div class="product ">
-                                <span class="new lable">New</span>
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <p class="product-price">$ 69.90</p>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End product-tab-content products-->                                     -->
-                </div>
-                <!-- End Tables -->
-                <div id="bestseller" class="tab-content">
-                    <div class="product-tab-content products">
-                        <div class="item-inner">
-                            <div class="product">
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <p class="product-price">$ 69.90</p>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-inner">
-                            <div class="product">
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <p class="product-price">$ 69.90</p>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-inner">
-                            <div class="product sale">
-                                <span class="sale lable">Sale</span>
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <div class="product-price">
-                                    <span class="price">$ 69.90</span>
-                                    <span class="price-old">$ 670.99</span>
-
-                                </div>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-inner">
-                            <div class="product ">
-                                <span class="new lable">New</span>
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <p class="product-price">$ 69.90</p>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End product-tab-content products-->
-                </div>
-                <!-- End Chairs -->
-                <div id="on-sale" class="tab-content">
-                    <div class="product-tab-content products">
-                        <div class="item-inner">
-                            <div class="product">
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <p class="product-price">$ 69.90</p>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-inner">
-                            <div class="product">
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <p class="product-price">$ 69.90</p>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-inner">
-                            <div class="product sale">
-
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <div class="product-price">
-                                    <span class="price">$ 69.90</span>
-                                    <span class="price-old">$ 670.99</span>
-
-                                </div>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-inner">
-                            <div class="product ">
-                                <span class="new lable">New</span>
-                                <a class="product-images" href="#" title="">
-                                    <img class="primary_image" src="resources/images/products/1.jpg" alt=""/>
-                                    <img class="secondary_image" src="resources/images/products/1.jpg" alt=""/>
-                                </a>
-                                <p class="product-title">Bouble Fabric Blazer</p>
-                                <p class="product-price">$ 69.90</p>
-                                <a class="add-to-cart" href="#">Add to Cart</a>
-                                <div class="action">
-                                    <a href="#" title="Like"><i class="fa fa-heart-o"></i></a>
-                                    <a href="#" title="View"><i class="fa fa-compress"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End product-tab-content products-->
-                </div>
-                <!-- End Lights -->
-            </div>
         </div>
-        <!-- End OurNewProduct -->
-        <div class="title-text">
-            <h3>News & Blog</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-        </div>
-        <!-- End title text -->
-        <div class="blog-post-container color-home2 space-10">
-            <div class="blog-post-inner">
-                <div class="blog-post-item">
-                    <div class="blog-post-image effect-v6">
-                        <a href="#" title="Post"><img src="resources/images/ImgBlog/1.jpg" alt=""></a>
-                        <a class="action light-style"  href="#"><i class="icons icons-bodered radius-x fa fa fa-link"></i>
-                        </a>
-                    </div>
-                    <p class="post-by"><span>POSTED IN NEWS</span><span> BY ADAM SMITH</span></p>
-                    <h3><a href="#" title="Integer scelerisque diam vitae aliquam fringilla.">Integer scelerisque diam vitae aliquam fringilla.</a></h3>
-                    <p class="post-date"><i class="fa fa-calendar"></i>16 December, 2015</p>
-                    <p class="content">Integer scelerisque diam vitae aliquam fringilla. In vitae eros ac libero mattis molestie nec in magna...</p>
-                </div>
-                <!-- End blog-item -->
-                <div class="blog-post-item">
-                    <div class="blog-post-image effect-v6">
-                        <a href="#" title="Post"><img src="resources/images/ImgBlog/1.jpg" alt=""></a>
-                        <a class="action light-style"  href="#"><i class="icons icons-bodered radius-x fa fa fa-link"></i>
-                        </a>
-                    </div>
-                    <p class="post-by"><span>POSTED IN NEWS</span><span> BY ADAM SMITH</span></p>
-                    <h3><a href="#" title="Integer scelerisque diam vitae aliquam fringilla.">Integer scelerisque diam vitae aliquam fringilla.</a></h3>
-                    <p class="post-date"><i class="fa fa-calendar"></i>16 December, 2015</p>
-                    <p class="content">Integer scelerisque diam vitae aliquam fringilla. In vitae eros ac libero mattis molestie nec in magna...</p>
-                </div>
-                <!-- End blog-item -->
-                <div class="blog-post-item">
-                    <div class="blog-post-image effect-v6">
-                        <a href="#" title="Post"><img src="resources/images/ImgBlog/1.jpg" alt=""></a>
-                        <a class="action light-style"  href="#"><i class="icons icons-bodered radius-x fa fa fa-link"></i>
-                        </a>
-                    </div>
-                    <p class="post-by"><span>POSTED IN NEWS</span><span> BY ADAM SMITH</span></p>
-                    <h3><a href="#" title="Integer scelerisque diam vitae aliquam fringilla.">Integer scelerisque diam vitae aliquam fringilla.</a></h3>
-                    <p class="post-date"><i class="fa fa-calendar"></i>16 December, 2015</p>
-                    <p class="content">Integer scelerisque diam vitae aliquam fringilla. In vitae eros ac libero mattis molestie nec in magna...</p>
-                </div>
-                <!-- End blog-item -->
-            </div>
-            <!-- End Blog-Post-Inner -->
-        </div>
-        <!-- End blog post -->
-        <div class="row content-bottom-home2">
-            <div class="col-md-4 policy">
-                <h3>policy</h3>
-                <ul>
-                    <li>
-                        <a href="#" title="orderonline">
-                            <i class="fa fa-phone"></i>
-                            <div class="text">
-                                <h4>ORDER ONLINE</h4>
-                                <p>Call Us: (0123) 456 789</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="shipping">
-                            <i class="fa fa-rocket"></i>
-                            <div class="text">
-                                <h4>WORLDWIDE SHIPPING</h4>
-                                <p>Free Shipping On Order Over $99</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="orderonline">
-                            <i class="fa fa-reply-all"></i>
-                            <div class="text">
-                                <h4>30 DAY RETURN</h4>
-                                <p>Moneyback guarantee</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- End col-md-4 -->
-            <div class="col-md-4">
-                <h3>TESTIMONIAL</h3>
-                <div class="wrap-slider-testti">
-                    <div class="item">
-                        <div class="head-item">
-                            <a href="#" class="images"><img src="resources/images/Futurelife-about1.jpg" alt="creative"></a>
-                            <div class="text">
-                                <a href="#" title="Pixel - Creative">Pixel - Creative</a>
-                                <p><i class="fa fa-calendar"></i>16 November,2014</p>
-                            </div>
-                        </div>
-                        <!-- End head-item -->
-                        <div class="content">
-                            <p><i class="fa fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ullamcorper tortor. Cras pulvinar ex maximus ex ullamcorper, ut sollicitudin risus laoreet.</p><i class="fa fa-quote-right"></i>
+    </div><!--END REVOLUTION SLIDER-->
 
-                        </div>
-                    </div>
-                    <!-- End item -->
-                    <div class="item">
-                        <div class="head-item">
-                            <a href="#" class="images"><img src="resources/images/Futurelife-about1.jpg" alt="creative"></a>
-                            <div class="text">
-                                <a href="#" title="Pixel - Creative">Pixel - Creative</a>
-                                <p><i class="fa fa-calendar"></i>16 November,2014</p>
-                            </div>
-                        </div>
-                        <!-- End head-item -->
-                        <div class="content">
-                            <p><i class="fa fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ullamcorper tortor. Cras pulvinar ex maximus ex ullamcorper, ut sollicitudin risus laoreet.</p><i class="fa fa-quote-right"></i>
 
-                        </div>
-                    </div>
-                    <!-- End item -->
-                    <div class="item">
-                        <div class="head-item">
-                            <a href="#" class="images"><img src="resources/images/Futurelife-about1.jpg" alt="creative"></a>
-                            <div class="text">
-                                <a href="#" title="Pixel - Creative">Pixel - Creative</a>
-                                <p><i class="fa fa-calendar"></i>16 November,2014</p>
-                            </div>
-                        </div>
-                        <!-- End head-item -->
-                        <div class="content">
-                            <p><i class="fa fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ullamcorper tortor. Cras pulvinar ex maximus ex ullamcorper, ut sollicitudin risus laoreet.</p><i class="fa fa-quote-right"></i>
-
-                        </div>
-                    </div>
-                    <!-- End item -->
-                </div>
-                <!-- End wrap slide -->
-            </div>
-            <div class="col-md-4 top-brand">
-                <h3>Top brands</h3>
-                <div class="content">
-                    <a href="#" title="Brand"><img src="resources/images/Hermes-brand1.jpg" alt="Brand 1"></a>
-                    <a href="#" title="Brand"><img src="resources/images/Hermes-brand1.jpg" alt="Brand 2"></a>
-                    <a href="#" title="Brand"><img src="resources/images/Hermes-brand1.jpg" alt="Brand 3"></a>
-                    <a href="#" title="Brand"><img src="resources/images/Hermes-brand1.jpg" alt="Brand 4"></a>
-                </div>
-            </div>
-            <!-- End col-md-4 -->
-        </div>
-        <!-- End row -->
-    </div>
-    <!-- End container -->
-</div>
-<!-- End MainContent -->
-<footer id="footer" class="footer-v2 color-home2">
+    <!--Start Custom content-->
     <div class="container">
-        <div class="row footer-top">
-            <div class="col-md-6">
-                <h2>Hermes</h2>
-                <p class="italic">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <div class="infomation">
-                    <p><i class="fa fa-phone"></i>Telephone: +84 988 992 085</p>
-                    <p><i class="fa fa-envelope-o"></i>Email: lamhvdesigner@gmail.com</p>
-                    <p><i class="fa fa-clock-o"></i>8:00 - 19:00, Monday - Saturday, Sunday - closed</p>
+        <div class="box-shadow section-small">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="custom-content">
+                        <h3>FREE UK DELIVERY</h3>
+                        <p>International delivery available</p>
+                    </div>
                 </div>
-                <a href="#" title="by this theme" class="button2">By This theme</a>
+                <div class="col-md-4">
+                    <div class="custom-content border-left">
+                        <h3>Gift Cards & Wrapping</h3>
+                        <p>The perfect way to bring a smile</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-content border-left">
+                        <h3>QUALIFIED OPTICIANS</h3>
+                        <p>Prescription Experts</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+    <!--End custom content-->
 
-            <div class="col-md-2">
-                <h3>Infomation</h3>
-                <ul class="menu">
-                    <li><a href="#" title="Help">Help</a></li>
-                    <li><a href="#" title="Contact Us">Contact Us</a></li>
-                    <li><a href="#" title="Warranty">Warranty</a></li>
-                    <li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
-                    <li><a href="#" title="Shopping information">Shopping information</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <h3>Service</h3>
-                <ul class="menu">
-                    <li><a href="#" title="My Account">My Account</a></li>
-                    <li><a href="#" title="Arder Status">Arder Status</a></li>
-                    <li><a href="#" title="Payment">Payment</a></li>
-                    <li><a href="#" title="Gift Voucher">Gift Voucher</a></li>
-                    <li><a href="#" title="Cancellations">Cancellations</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <h3>My Account</h3>
-                <ul class="menu">
-                    <li><a href="#" title="Projects">Projects</a></li>
-                    <li><a href="#" title="Jobs">Jobs</a></li>
-                    <li><a href="#" title="Collections">Collections</a></li>
-                    <li><a href="#" title="Blog">Blog</a></li>
-                    <li><a href="#" title="Media">Media</a></li>
-                </ul>
-            </div>
-            <div class="col-md-12 footer-top-bottom">
-                <p>Copyrigh 2016 by <a class="color" href="#" title="Pixel-Creative">Pixel-Creative</a>. All Rights Reserved.</p>
-                <ul class="menu">
-                    <li><a href="#" title="Home">Home</a></li>
-                    <li><a href="#" title="New Arrival">New Arrival</a></li>
-                    <li><a href="#" title="Stie map">Stie map</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
+    <!--Start section large top for tabs content-->
+    <div class="section-large-top">
         <div class="container">
-            <div class="col-md-6">
-                <span>newsletter</span>
-                <form action="#" method="get" accept-charset="utf-8">
-                    <input type="text" onblur="if (this.value == '') {this.value = 'Enter Your Email';}" onfocus="if(this.value != '') {this.value = '';}" value="Enter Your Email" class="input-text required-entry validate-email" title="Sign up for our newsletter" id="newsletter" name="email">
-                    <button class="button button1 color-home2" title="Subscribe" type="submit">Subscribe</button>
-                </form>
+            <!--Tabs Shop-->
+            <div class="tz-shortcode-tabs">
+
+                <!--Tabs Header-->
+                <div class="tz-tabs-header">
+                    <h2 class="tz-tabs-title pull-left">Featured Products</h2>
+                    <ul class="nav nav-tabs pull-right tz-nav-tabs">
+                        <li role="presentation" class="active"><a href="#one_read" data-toggle="tab">On-Road <i class="fa fa-circle"></i></a></li>
+                        <li role="presentation"><a href="#x_road" data-toggle="tab">X-Road <i class="fa fa-circle"></i></a></li>
+                        <li role="presentation"><a href="#off_road" data-toggle="tab">Off-Road <i class="fa fa-circle"></i></a></li>
+                        <li role="presentation"><a href="#bmx" data-toggle="tab">BMX</a></li>
+                    </ul>
+                </div>
+                <!--End tab header-->
+
+                <!--Tab content-->
+                <div class="tab-content">
+
+                    <!--Tab item-->
+                    <div class="tab-pane active" id="one_read">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="../../resources/images/product/product3.jpg" alt="product 3" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">FastRoad CoMax</a></h4>
+                                        <span class="product-price">$900.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--End tab item-->
+
+                    <!--Tab item-->
+                    <div class="tab-pane" id="x_road">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="../../resources/images/product/product2.jpg" alt="product 1" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">Propel Advanced SL 0</a></h4>
+                                        <span class="product-price">$900.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--End tab item-->
+
+                </div>
+                <!--End tab content-->
+
             </div>
-            <div class="col-md-6">
-                <a href="#" title="Payment"><img src="resources/images/Hermes-footer-payment.png" alt="payment"></a>
-            </div>
+            <!--End Tabs Shop-->
         </div>
     </div>
-    <!-- End container -->
-</footer>
+    <!--End section large top for tabs content-->
+
+    <!--Start section medium for product event-->
+    <div class="section-medium bk-gray">
+        <div class="container">
+
+            <!--Product event-->
+            <div class="product-event">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <!--Thumnbail-->
+                        <div class="event-thumbail">
+                            <img src="../../resources/images/product/single-product.jpg" alt="product event">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <!--Product content-->
+                        <ul class="product-event-content">
+                            <li>
+                                <div id="defaultCountdown" class="tzCountdown"></div>
+                            </li>
+                            <li>
+                                <h3><a href="single-product.html">Propel Advanced Pro Frameset</a></h3>
+                                <span class="product-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                    </span>
+                                <span class="event-price">$2,290.00</span>
+                            </li>
+                            <li class="product-event-attr">
+                                    <span class="tz-color">
+                                        Color:
+                                        <i class="fa fa-circle light-blue"></i>
+                                        <i class="fa fa-circle orange"></i>
+                                        <i class="fa fa-circle blueviolet"></i>
+                                        <i class="fa fa-circle orange-dark"></i>
+                                        <i class="fa fa-circle steelblue"></i>
+                                    </span>
+                                <span class="tz-stock">
+                                        In stock : 10
+                                    </span>
+                            </li>
+                            <li class="event-footer">
+                                <a href="shop-cart.html" class="add-to-cart">Add to cart</a>
+                                <a href="#" class="add-to-wishlist">Add to wishlist</a>
+                            </li>
+                        </ul>
+                        <!--End Product content-->
+
+                    </div>
+                </div>
+            </div>
+            <!--End product event-->
+
+        </div>
+    </div>
+    <!--End section medium for product event-->
+
+    <!--Start section large top for tabs content-->
+    <div class="section-large-top">
+        <div class="container">
+
+            <!--Start class Shortcode tabs-->
+            <div class="tz-shortcode-tabs">
+
+                <!--Tabs Header-->
+                <div class="tz-tabs-header">
+                    <h2 class="tz-tabs-title pull-left">Widget Products</h2>
+                    <ul class="nav nav-tabs pull-right tz-nav-tabs">
+                        <li role="presentation" class="active"><a href="#baby_seats" data-toggle="tab">Baby Seats<i class="fa fa-circle"></i></a></li>
+                        <li role="presentation"><a href="#bells" data-toggle="tab">Bells<i class="fa fa-circle"></i></a></li>
+                        <li role="presentation"><a href="#bottle_cages" data-toggle="tab">Bottle Cages<i class="fa fa-circle"></i></a></li>
+                        <li role="presentation"><a href="#fenders" data-toggle="tab">Fenders</a></li>
+                        <li role="presentation"><a href="#all" data-toggle="tab">View all</a></li>
+                    </ul>
+                </div>
+                <!--End Tabs header-->
+
+                <!--Start Tabs content-->
+                <div class="tab-content">
+
+                    <!--Tab item-->
+                    <div class="tab-pane active" id="baby_seats">
+                        <!--Start product-->
+                        <div class="row row-item">
+
+                            <div class="col-md-3 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="../../resources/images/product/product7.jpg" alt="product 4" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">Propel Advanced SL 0</a></h4>
+                                        <span class="product-price">$900.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                        </div>
+                        <!--End product-->
+                    </div>
+                    <!--End tab item-->
+
+
+
+                    <!--Tab item-->
+                    <div class="tab-pane" id="all">
+                        <!--Start product-->
+                        <div class="row row-item">
+                            <div class="col-md-3 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="images/product/product4.png" alt="product 4" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">Propel Advanced SL 0</a></h4>
+                                        <span class="product-price">$900.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="images/product/product5.jpg" alt="product 2" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">Defy Advanced SL</a></h4>
+                                        <span class="product-price">$1,770.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="images/product/product6.jpg" alt="product 3" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">FastRoad CoMax</a></h4>
+                                        <span class="product-price">$900.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="images/product/product7.jpg" alt="product 4" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">Propel Advanced SL 0</a></h4>
+                                        <span class="product-price">$900.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                        </div>
+                        <div class="row row-item">
+                            <div class="col-md-3 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="images/product/product8.jpg" alt="product 2" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">Defy Advanced SL</a></h4>
+                                        <span class="product-price">$1,770.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="images/product/product9.jpg" alt="product 3" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">FastRoad CoMax</a></h4>
+                                        <span class="product-price">$900.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="images/product/product10.jpg" alt="product 2" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">Defy Advanced SL</a></h4>
+                                        <span class="product-price">$1,770.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                                <!--Start product item-->
+                                <div class="product-item">
+                                    <div class="product-thubnail">
+                                        <img src="images/product/product8.jpg" alt="product 2" />
+                                        <div class="product-meta">
+                                            <a class="add-to-cart" href="shop-cart.html">Add to cart</a>
+                                            <span class="quick-view">
+                                                    <a href="#">Quick view</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-infomation">
+                                        <h4><a href="single-product.html">Defy Advanced SL</a></h4>
+                                        <span class="product-price">$1,770.00</span>
+                                        <span class="product-attr">
+                                                <i class="fa fa-circle light-blue"></i>
+                                                <i class="fa fa-circle orange"></i>
+                                                <i class="fa fa-circle blueviolet"></i>
+                                                <i class="fa fa-circle orange-dark"></i>
+                                                <i class="fa fa-circle steelblue"></i>
+                                            </span>
+                                    </div>
+                                </div>
+                                <!--End product item-->
+
+                            </div>
+                        </div>
+                        <!--End product-->
+                    </div>
+                    <!--End tab item-->
+
+                </div>
+                <!--End tabs content-->
+
+            </div>
+            <!--End class Shortcode tabs-->
+
+        </div>
+    </div>
+    <!--End section large top for tabs content-->
+
+    <!--Start parallax-->
+    <section class="parallax background-parallax">
+        <div class="container">
+
+            <!--Get In Touch-->
+            <div class="get-in-touch">
+                <h3>GET IN TOUCH</h3>
+                <p>Have an idea or a project, lets collaborate and build some awesome stuff</p>
+                <a class="buynow" href="shop.html">Buy now</a>
+            </div>
+            <!--End Get In Touch-->
+
+        </div>
+    </section>
+    <!--End Start parallax-->
+
+    <!--Start section lager-->
+    <section class="section-large">
+        <div class="container">
+            <div class="box-shadow section-small2">
+                <h2 class="tz-title-black">From our Blog <span>Latest news & event of our bike</span></h2>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+
+                        <!--Start new blog-->
+                        <div class="tz-new-blog">
+                            <div class="tzthumbnail">
+                                <img src="../../resources/images/Blog/Blog1.jpg" alt="Blog">
+                            </div>
+                            <div class="tz-new-content">
+                                <h4><a href="single-blog.html">Gulf Today Report On KGS Carnival – 2015</a></h4>
+                                <span class="post-date">Posted at March 19. 2015</span>
+                                <p>Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.</p>
+                                <a href="#" class="continue">Continue Reading</a>
+                            </div>
+                        </div>
+                        <!--End new blog-->
+
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+
+                        <!--Start new blog-->
+                        <div class="tz-new-blog">
+                            <div class="tzthumbnail">
+                                <img src="../../resources/images/Blog/Blog2.jpg" alt="Blog">
+                            </div>
+                            <div class="tz-new-content">
+                                <h4><a href="blog.html">Excepteur sint ipsum dolor sit amet conse ctetur</a></h4>
+                                <span class="post-date">Posted at March 19. 2015</span>
+                                <p>Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.</p>
+                                <a href="#" class="continue">Continue Reading</a>
+                            </div>
+                        </div>
+                        <!--End new blog-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End section large-->
+
+    <!--Start partners-->
+    <div class="container">
+        <ul class="tz-partners">
+            <li>
+                <a href="#">
+                    <img src="../../resources/images/clients/partner1.jpg" alt="partner">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--End partners-->
+
+    <!--Start Footer-->
+    <footer class="tz-footer">
+        <div class="footer-widget">
+            <div class="container">
+
+                <!--Start footer left-->
+                <div class="footer-left">
+                    <div class="contact-info widget">
+                        <h3 class="widget-title">Contact info</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <ul>
+                            <li>
+                                <span>Address :</span>
+                                <address>
+                                    123 Sky Tower address name, Los Algeles, ,<br> USA, Country, 01234
+                                </address>
+                            </li>
+                            <li>
+                                <span>Phone :</span>
+                                (012) 345 6789
+                            </li>
+                            <li>
+                                <span>Email :</span>
+                                info@templaza.com
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <form class="tz-subcribe">
+                            <input type="text" name="sub" value="" placeholder="Enter your email...">
+                            <input type="submit" name="subscribe" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="widget">
+                        <ul class="tz-social">
+                            <li>
+                                <a class="fa fa-facebook" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-twitter" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-google-plus" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-tumblr" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-flickr" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-pinterest" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--End footer left-->
+
+                <!--Start footer right-->
+                <div class="footer-right">
+                    <div class="tz-widget-clients widget">
+                        <h3 class="widget-title">What clients say?</h3>
+                        <div class="tz-widget-say">
+                            <img src="../../resources/images/say.jpg" alt="Kathy Young">
+                            <div class="entry-say">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor     incididunt ut labore et dolore magna aliqua.</p>
+                                <span>Kathy Young</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget widget_nav_menu">
+                                <h3 class="widget-title">HOW TO BUY</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Returns</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Site Map</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Brands</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Gift Vouchers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget widget_nav_menu">
+                                <h3 class="widget-title">MY ACCOUNT</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">My Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Order History</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Wish List</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Newsletter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Specials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget widget_nav_menu">
+                                <h3 class="widget-title">Infomation</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Returns</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Term & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End footer right-->
+
+            </div>
+        </div>
+        <div class="tz-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <p>Copyright &copy; 2015 <a href="http://templaza.com/" target="_blank">BikeSport</a> by TemPlaza. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="pull-right">
+                                <span class="payments-method">
+                                    <a href="#"><img src="../../resources/images/Visa.png" alt="visa"></a>
+                                    <a href="#"><img src="../../resources/images/Intersection.png" alt="Intersection"></a>
+                                    <a href="#"><img src="../../resources/images/ebay.png" alt="ebay"></a>
+                                    <a href="#"><img src="../../resources/images/Amazon.png" alt="Amazon"></a>
+                                    <a href="#"><img src="../../resources/images/Discover.png" alt="Discover"></a>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+</div>
+<!--End class site-->
 <%@include file="tmp/footer.jsp"%>
